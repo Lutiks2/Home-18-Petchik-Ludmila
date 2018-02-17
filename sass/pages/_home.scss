@@ -1,0 +1,59 @@
+///////// section about//////////
+
+.about {
+    @media all and (min-width: $md) {
+        float: left;
+        width: 45%;
+    }
+}
+
+.about-main {
+    font: 400 14px $main-font;
+    color: $third-main-color;
+    p {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    @media all and (min-width: $md) {
+        float: right;
+        width: 55%;
+    }
+}
+
+////////section services///////////
+
+.services-list {
+    padding-left: 0;
+    list-style: none;
+    li {
+        @media all and (min-width: $sm) {
+            display: inline-block;
+            width: 45%;
+            padding-bottom: 60px;
+            float: left;
+            &:nth-child(odd) {
+                padding-right: 50px;
+            }
+        }
+    }
+}
+.services-img {
+    margin: 0 auto;
+    display: inline-block;
+    padding-bottom: 20px;
+    @media all and (min-width: $sm) {
+        float: left;
+        padding-right: 40px;
+    }
+}
+
+.services-title {
+    font: 800 16px $second-font;
+    text-transform: uppercase;
+    color: $second-main-color;
+}
+
+.services-descrip {
+    font: 400 14px $main-font;
+    color: $third-main-color;
+}

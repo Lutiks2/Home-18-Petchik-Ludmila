@@ -1,0 +1,72 @@
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    @media all and (min-width: $sm) {
+        padding: 0 30px;
+    }
+    @media all and (min-width: $lg) {
+        max-width: 1140px;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:hover {
+    transition: all 0.5s ease;
+}
+// section
+
+.wrap {
+    margin: 0 auto;
+    padding: 30px 10px;
+    @media all and (min-width: $sm) {
+        padding: 60px 30px;
+    }
+    @media all and (min-width: $md) {
+        padding: 100px 30px;
+    }
+    @media all and (min-width: $lg) {
+        max-width: 1140px;
+    }
+}
+
+// button
+
+.button {
+    padding: 20px 34px;
+    font: 700 13px $second-font;
+    text-transform: uppercase;
+    color: $second-main-color;
+}
+
+.heading-section {
+    text-align: center;
+    color: $second-main-color;
+    padding-bottom: 30px;
+    h3 {
+        margin: 0;
+        font: 800 30px $second-font;
+        text-transform: uppercase;
+    }
+    span {
+        font: italic 16px $third-font;
+        text-transform: capitalize;
+    }
+    @media all and (min-width: $md){
+        text-align: left;
+    }
+}
